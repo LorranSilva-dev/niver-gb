@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feliz Aniversário, Amor!</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <audio id="backgroundAudio" loop>
+        <source src="audio/muitasguas.mpeg" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+      </audio>
+      
+      <script>
+        // Tentar iniciar o áudio ao clicar na página
+        document.addEventListener('click', function() {
+          const audio = document.getElementById('backgroundAudio');
+          audio.play();
+        });
+      </script>
+
+  <header>
+    <h1 class="main-title">Feliz Aniversário, Meu Amor!</h1>
+  </header>
+  
+  <section class="declaration">
+    <p class="love-declaration">"Provérbios 18:22 "Quem encontra uma esposa encontra algo excelente; recebeu uma bênção do Senhor"</p>
+  </section>
+  
+  <section class="photo-carousel">
+    <div class="carousel-container">
+      <button class="prev-button">&#10094;</button>
+      <div class="carousel-images">
+        <img src="imagens/foto1.jpeg" alt="Nosso casamento" class="carousel-item">
+        <img src="imagens/foto2.jpeg" alt="Nosso casamento" class="carousel-item">
+        <img src="imagens/foto3.jpeg" alt="Nosso casamento" class="carousel-item">
+        <img src="imagens/foto4.jpeg" alt="Nosso casamento" class="carousel-item">
+        <img src="imagens/foto5.jpeg" alt="Nosso casamento" class="carousel-item">
+        <img src="imagens/foto6.jpeg" alt="Nosso casamento" class="carousel-item">
+        <img src="imagens/foto7.jpeg" alt="Nosso casamento" class="carousel-item">
+        <img src="imagens/foto8.jpeg" alt="Nosso casamento" class="carousel-item">
+      </div>
+      <button class="next-button">&#10095;</button>
+    </div>
+  </section>
+  
+  <section class="declaration-box">
+    <div class="declaration-content">
+      <p>"
+        "</p>
+    </div>
+  </section>
+
+  <div class="letter-container">
+    <button class="open-letter-button">Clique aqui para abrir a carta</button>
+    <div class="letter-popup">
+      <div class="letter-content">
+        <h2>De Lorran para minha amada esposa Gabrielly</h2>
+        <p>Minha Gabrielly,
+
+          Neste dia tão especial, quero agradecer por cada momento que compartilhamos juntos. Em fevereiro de 2025, completaremos 6 anos de uma jornada incrível, e não há palavras que expressem toda a minha gratidão por ter você ao meu lado.
+          
+          Desde que você entrou na minha vida, tudo ganhou mais cor e sentido. Você é um presente de Deus maravilhoso, e me lembro sempre das palavras: "Quem encontra uma boa esposa, acha algo excelente; recebeu uma bênção do Senhor" (Provérbios 18:22). É exatamente assim que eu vejo você – uma bênção que mudou tudo para melhor.
+          
+          Sei que passamos por momentos inesquecíveis, mas também por desafios. Ainda assim, com você, cada obstáculo parece mais fácil de enfrentar. Seu amor, seu carinho e sua força me fazem querer ser alguém melhor a cada dia.
+          
+          Sou eternamente grato por tudo o que vivemos e por tudo o que você é. Te amo mais do que consigo expressar em palavras, e desejo que continuemos a construir uma vida cheia de felicidade, lado a lado.
+          
+          Feliz aniversário, meu amor!
+          
+          Com todo o carinho,
+          Lorran</p>
+        <button class="close-letter-button">Fechar Carta</button>
+      </div>
+    </div>
+  </div>
+  
+
+  <footer>
+    <p>&copy; 2024 - Todos os direitos reservados</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

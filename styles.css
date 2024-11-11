@@ -1,0 +1,341 @@
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Corpo e estilo básico */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Header - Título principal */
+  header {
+    background-color: #f2d7a1;
+    text-align: center;
+    padding: 3rem 0;
+  }
+  
+  .main-title {
+    font-family: 'Georgia', serif;
+    font-size: 3rem;
+    color: #5d3f00;
+    text-transform: uppercase;
+    animation: fadeIn 3s ease-in-out;
+  }
+  
+  /* Caixa de Declaração */
+.declaration-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+  
+  .declaration-content {
+    background-color: #f2d7a1;
+    padding: 2rem;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 3s ease-in-out;
+  }
+  
+  .declaration-content p {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #5d3f00;
+  }
+  
+  
+  .love-declaration {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #5d3f00;
+    max-width: 800px;
+    margin: 0 auto;
+    animation: fadeInUp 3s ease-out;
+  }
+  
+  /* Carrossel de fotos */
+  .photo-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; /* Ajuste a altura conforme necessário */
+    position: relative;
+    background-color: #f4f4f9; /* Fundo suave */
+    overflow: hidden;
+  }
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 50%;
+  max-width: 400px;
+  overflow: hidden; /* Esconde as imagens fora da área visível */
+}
+
+.carousel-images {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+  
+.carousel-item {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+  
+  .carousel-item:hover {
+    transform: scale(1.05);
+  }
+
+  /* Botões de navegação */
+.prev-button,
+.next-button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  border-radius: 5px;
+  opacity: 0.7;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
+.prev-button:hover,
+.next-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+  
+  /* Efeito de parallax ao rolar */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+  }
+  
+  .fade-in.visible {
+    opacity: 1;
+  }
+
+  
+  /* Botão de mensagem */
+  .interactive {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .message-btn {
+    background-color: #5d3f00;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .message-btn:hover {
+    background-color: #9a7b44;
+  }
+  
+  /* Formulário de mensagem */
+  .message-form {
+    display: none;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  .message-form textarea {
+    width: 80%;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+  }
+  
+  .message-form button {
+    background-color: #5d3f00;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .message-form button:hover {
+    background-color: #9a7b44;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 2rem 0;
+    background-color: #5d3f00;
+    color: white;
+  }
+  
+  /* Responsividade */
+  @media screen and (max-width: 768px) {
+    .carousel-container {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  
+    .carousel-item {
+      width: 80%;
+    }
+  }
+  
+  .letter-container {
+    position: relative;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .open-letter-button {
+    font-size: 1.2rem;
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #f4b393;
+    border-radius: 5px;
+    color: #f4b393;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+
+  .open-letter-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Desenho do "envelope" */
+.open-letter-button::before, .open-letter-button::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  display: block;
+}
+
+
+.open-letter-button::before {
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 0 15px 10px 15px;
+  border-color: transparent transparent #f2d7a1 transparent;
+}
+
+.open-letter-button::after {
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 10px 15px 0 15px;
+  border-color: #f2d7a1 transparent transparent transparent;
+}
+  
+.letter-popup {
+  display: none; /* Escondida por padrão */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateX(90deg); /* Inicialmente dobrada */
+  transform-origin: top; /* Origem da transformação no topo */
+  width: 80%;
+  max-width: 600px;
+  background-color: #fff;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  z-index: 1000;
+  font-family: 'YourFont', sans-serif;
+  color: #333;
+  opacity: 0; /* Invisível inicialmente */
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out; /* Transição suave */
+}
+  
+.letter-content h2 {
+  font-size: 1.8rem;
+  color: #f4b393; /* Cor de destaque */
+  margin-bottom: 1rem;
+}
+
+.letter-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555; /* Tom mais suave */
+}
+
+.close-letter-button {
+  font-size: 1rem;
+  padding: 10px 15px;
+  background-color: #f4b393;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 1.5rem;
+  display: inline-block;
+}
+
+.close-letter-button:hover {
+  background-color: #e8957c; /* Tom mais escuro no hover */
+}
+
+.letter-popup.active {
+  display: block;
+  opacity: 1; /* Visível */
+  transform: translate(-50%, -50%) rotateX(0deg); /* Desdobra para plano */
+}
+  
+  body::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  
+  
+  
